@@ -1,11 +1,26 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+**/build/
+
+# Temporary files
+tmp/
+.temp/
+.tmp/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 pnpm-debug.log*
@@ -13,12 +28,43 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# dotenv environment variable files
-.env
-.env.development
-.env.test
-.env.production
+# AI agent configuration and instructions
+.agents/
+agents/
 
-# temp directory
-.temp
-.tmp
+.claudeignore
+
+# Claude Code
+.claude/
+.claude.json
+.claudeignore
+
+# Windsurf
+.windsurf/
+.codeium/
+
+# Cursor
+.cursor/
+.cursorignore
+
+# GitHub Copilot
+.copilot/
+
+# Gemini
+.gemini/
+
+# AI agent files and directories
+.agents/
+.agents
+agents/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
